@@ -112,14 +112,14 @@ var questionsArray = [q1, q2, q3, q4, q5, q6, q7, q8, q9, q10];
       $(".timer-div").html(time);
       if (time == 0) {
         if (arrayIndex < questionsArray.length-1) {
-        	setTimeout(function () {questionDisplay(questionsArray[arrayIndex])}, 4000);
+        	setTimeout(function () {questionDisplay(questionsArray[arrayIndex])}, 3000);
         	solutionText(questionsArray[arrayIndex]);
 	    	$(".question-div").html("OUT OF TIME");
         	stop();
         	missed++;
       	}
       	else if (arrayIndex < questionsArray.length) {
-      		setTimeout(function () {results(questionsArray[arrayIndex])}, 4000);
+      		setTimeout(function () {results(questionsArray[arrayIndex])}, 3000);
       		solutionText(questionsArray[arrayIndex]);
 	    	$(".question-div").html("OUT OF TIME");
         	stop();
@@ -173,10 +173,10 @@ var questionsArray = [q1, q2, q3, q4, q5, q6, q7, q8, q9, q10];
 			$(".question-div").html("CORRECT");
 			correct++;
 			if (arrayIndex < questionsArray.length) {
-				setTimeout(function () {questionDisplay(questionsArray[arrayIndex])}, 2000);
+				setTimeout(function () {questionDisplay(questionsArray[arrayIndex])}, 3000);
 			}
 			else if (arrayIndex < questionsArray.length+1) {
-		        setTimeout(function () {results(questionsArray[arrayIndex])}, 2000);
+		        setTimeout(function () {results(questionsArray[arrayIndex])}, 3000);
       		}
 		}
 		else if ($(this).attr("value") == "incorrect") {
@@ -184,10 +184,10 @@ var questionsArray = [q1, q2, q3, q4, q5, q6, q7, q8, q9, q10];
 			$(".question-div").html("INCORRECT");
 			incorrect++;
 			if (arrayIndex < questionsArray.length) {
-				setTimeout(function () {questionDisplay(questionsArray[arrayIndex])}, 2000);
+				setTimeout(function () {questionDisplay(questionsArray[arrayIndex])}, 3000);
 			}
 			else if (arrayIndex < questionsArray.length+1) {
-		        setTimeout(function () {results(questionsArray[arrayIndex])}, 2000);
+		        setTimeout(function () {results(questionsArray[arrayIndex])}, 3000);
       		}
 		}
 	};
