@@ -1,0 +1,50 @@
+body {
+	background-image: url("../images/fields.jpg");
+	margin: 0px;
+	padding: 0px;
+}
+
+.background {
+	background: black;
+	opacity: 0.8;
+	padding: 20px 60px 20px 60px;
+	margin-top: 3%;
+}
+
+@font-face {font-family: "FrederickatheGreat"; src: url('../fonts/FrederickatheGreat-Regular.ttf');}
+@font-face {font-family: "Caveat"; src: url('../fonts/Caveat-Regular.ttf');}
+@font-face {font-family: "Comfortaa"; src: url('../fonts/Comfortaa-Regular.ttf');}
+@font-face {font-family: "CabinSketch"; src: url('../fonts/CabinSketch-Regular.ttf');}
+
+h1 {
+	color: white;
+	font-family: "FrederickatheGreat";
+	font-size: 65px;
+}
+
+.page-text {
+	color: white;
+	font-family: "Comfortaa";
+	font-size: 25px;
+	margin-bottom: 10px;
+}
+
+.content-div {
+	color: white;
+}
+
+.answerBtn {
+	color: white;
+	font-family: "Caveat";
+	margin-bottom: 10px;
+	width: 70%;
+	font-size: 30px;
+	background: none;
+	border: none;
+}
+
+.movie-image{
+	opacity: 1;
+	margin-top: 20px;
+	margin-bottom: 10px;
+}
